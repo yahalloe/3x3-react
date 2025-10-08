@@ -1,19 +1,16 @@
-import "./styles/globals.css";
-import { Header } from "./components/Header";
-import { Body } from "./components/Body";
-import { Footer } from "./components/Footer";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Home } from "./pages/Home";
+import { About } from './pages/About';
 
 function App() {
   return (
-    <>
-      <div>
-        <Header />
-        <div className="black-333">
-          <Body />
-          <Footer />
-        </div>
-      </div>
-    </>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </BrowserRouter>
   );
 }
+
 export default App;
