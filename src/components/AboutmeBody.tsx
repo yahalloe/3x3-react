@@ -12,7 +12,9 @@ export function AboutmeBody() {
           series and movies. I have a deep love for the art and storytelling of
           anime. I created this site to share my top nine favorite anime series
           of all time. I hope you enjoy my selections and find some new
-          favorites to watch!
+          favorites to watch! <br /> <br />
+          I also made an open source anime picker that let you find something to rewatch
+          from your own list of anime. If you're interested, you can check it out <a href="https://animepicker.yahallo.tech" target="blacnk" className="text-blue-300 hover:text-blue-500 font-bold">here</a>.
         </p>
         <p className="pt-6">
           Feel free to reach out to me on{" "}
