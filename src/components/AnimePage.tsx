@@ -23,7 +23,7 @@ export function AnimePage() {
   return (
     <>
       <Header />
-      <div className="min-h-3/4 black-333 flex flex-col items-center justify-center text-stone-200 pt-10">
+      <div className="min-h-3/4 w-full black-333 flex flex-col items-center justify-center text-stone-200 pt-10">
         <img
           src={anime.image}
           alt={anime.title}
@@ -42,9 +42,11 @@ export function AnimePage() {
           {anime.reason}
         </p>
 
-        <Link to="/" className="pb-10">
-          <BackButton />
-        </Link>
+        <div className="min-w-5/6 flex justify-start pb-2 pt-10 lg:min-w-1/2">
+          <Link to="/">
+            <BackButton />
+          </Link>
+        </div>
       </div>
       <Footer />
     </>
