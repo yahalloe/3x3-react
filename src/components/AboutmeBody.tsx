@@ -3,7 +3,7 @@ export function AboutmeBody() {
     // I feel like the min-h-[70] will break on weird screen sizes but idk how to fix it.
     <div className="min-h-[70vh] black-333 text-stone-300 text-left flex flex-col items-center pt-10 px-5 py-5 sm:px-10 md:px-10 lg:px-7">
       <div className="max-w-5xl text-lg sm:text-xl lg:text-3xl">
-        <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6 text-left">
+        <h1 className="text-5xl sm:text-6xl md:text-7xl mb-6 text-left">
           About me
         </h1>
         <p className="pt-6">
