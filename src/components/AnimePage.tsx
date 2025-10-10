@@ -30,7 +30,7 @@ export function AnimePage() {
           title={anime.title}
           className="w-sm sm:w-2/3 md:w-1/2 lg:max-w-xl aspect-square object-cover rounded-2xl mb-6 shadow-lg"
         />
-        <h1 className="text-6xl sm:text-6xl md:text-7xl font-bold mb-3 text-center max-w-full sm:max-w-[80%] md:max-w-[50%] mx-auto">
+        <h1 className="text-6xl sm:text-6xl md:text-7xl mb-3 text-center max-w-full sm:max-w-[80%] md:max-w-[50%] mx-auto">
           {anime.title}
         </h1>
 
