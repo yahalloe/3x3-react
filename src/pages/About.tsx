@@ -5,12 +5,12 @@ import { AboutmeFooter } from "../components/AboutmeFooter";
 
 export function About() {
   return (
-      <div>
-        <Header />
-        <div className="black-333">
-          <AboutmeBody />
-          <AboutmeFooter />
-        </div>
+    <div>
+      <Header />
+      <div className="black-333">
+        <AboutmeBody />
+        <AboutmeFooter />
       </div>
+    </div>
   );
 }
