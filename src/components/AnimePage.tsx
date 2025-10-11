@@ -4,6 +4,8 @@ import { animeList } from "./animeData";
 import { Header } from "./Header";
 import { BackButton } from "./BackButton";
 import { Footer } from "./Footer";
+import { NotFound } from "../pages/NotFound";
+
 
 export function AnimePage() {
   const { title } = useParams();
@@ -11,12 +13,7 @@ export function AnimePage() {
 
   if (!anime) {
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center text-stone-200">
-        <p className="text-xl mb-4">Anime not found 😢</p>
-        <Link to="/" className="text-blue-400 hover:underline">
-          ← Back to grid
-        </Link>
-      </div>
+      <NotFound />
     );
   }
 

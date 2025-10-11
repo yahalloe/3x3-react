@@ -1,4 +1,4 @@
-// animeData.js
+// animeData.tsx
 export const animeList = [
   {
     id: "hyouka",
