@@ -1,5 +1,4 @@
 import "../styles/globals.css";
-import { Body } from "../components/Body";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { RomcomBody } from "../components/RomcomBody";

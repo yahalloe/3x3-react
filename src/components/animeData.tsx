@@ -22,7 +22,6 @@ import tamako from "../assets/tamako.jpg";
 import clannad from "../assets/clannad-after-story-21.jpg";
 import kaguyasama from "../assets/kaguya-sama-love-is-war-shinomiya-cat-ears.jpg";
 import goldenTime from "../assets/golden time.jpg";
-import yourName from "../assets/yourname.jpg";
 import makeine from "../assets/makeine.webp";
 
 
