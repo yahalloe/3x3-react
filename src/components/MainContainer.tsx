@@ -9,7 +9,7 @@ export function MainContainer() {
           <Link key={anime.id} to={`anime/${anime.id}`}>
             <img
               title={anime.title}
-              src={anime.image}
+              src={anime.image1}
               alt={anime.title}
               className="object-cover w-full aspect-square rounded-2xl border-2 border-transparent hover:border-stone-100 transition-all duration-200"
             />

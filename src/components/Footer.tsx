@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 export function Footer() {
   return (
     <div className="black-111">
+      
       <div className="text-lg lg:text-xl font-nunito flex justify-center pt-5 text-zinc-700 gap-5">
         <Link to="/about" className="hover:text-stone-300">about me</Link>
         <a href="https://github.com/yahalloe/3x3-react" target="_blank" className="hover:text-stone-300">source</a>
