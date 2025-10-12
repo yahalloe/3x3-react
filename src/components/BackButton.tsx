@@ -1,8 +1,13 @@
 //backbutton component
+import { useNavigate } from "react-router-dom";
+
 export function BackButton() {
+   const navigate = useNavigate();
+
   return (
     <div className="items-end flex">
-      <button className="group relative cursor-pointer gap-1.5 px-3 py-3 lg:px-4 lg:py-4 bg-[#222] rounded-full hover:bg-stone-950 transition-colors duration-200 text-stone-300 hover:text-white">
+      <button onClick={() => navigate(-1)} // 👈 go back one page
+      className="group relative cursor-pointer gap-1.5 px-3 py-3 lg:px-4 lg:py-4 bg-[#222] rounded-full hover:bg-stone-950 transition-colors duration-200 text-stone-300 hover:text-white">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
