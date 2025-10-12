@@ -7,9 +7,24 @@ import frierenTrio from "../assets/frierenTrio.jpg";
 import monogatari from "../assets/monogatari.jpg";
 import suzumiya from "../assets/suzumiya.jpg";
 import madeInAbyss1 from "../assets/madeInAbyss1.jpg";
-import hunter from "../assets/hunter.jpg";
+import madeInAbyss from "../assets/made in abyss.jpg";
+import hunter from "../assets/hunterhunter.avif";
 import bunnyGirl from "../assets/bunnyGirl.jpg";
 import eightySix from "../assets/86-eighty-six-lena-shin-4k--78.0_d.jpg";
+import oregairuOthers from "../assets/oregairu.jpg";
+import dunno from "../assets/question.webp";
+import rere from "../assets/rere.jpg";
+import oregairu from "../assets/oregairu.jpg";
+import chuunibyou from "../assets/chuunibyou.jpeg";
+import bokuyaba from "../assets/boku-no-kokoro-no-yabai-6.jpg";
+import saekano from "../assets/saekano7.jpg";
+import tamako from "../assets/tamako.jpg";
+import clannad from "../assets/clannad-after-story-21.jpg";
+import kaguyasama from "../assets/kaguya-sama-love-is-war-shinomiya-cat-ears.jpg";
+import goldenTime from "../assets/golden time.jpg";
+import yourName from "../assets/yourname.jpg";
+import makeine from "../assets/makeine.webp";
+
 
 export const animeList = [
   {
@@ -39,11 +54,13 @@ export const animeList = [
   {
     id: "frieren",
     title: "Frieren: Beyond Journey's End",
-    image: fern,
-    image1: frierenTrio,
+    image: frierenTrio,
+    image1: fern,
     description:
       "An elf mage reflects on the meaning of life and time as she journeys after her hero’s party has disbanded.",
-    reason: <></>,
+    reason: <>Ah yes, the pout queen herselft. Her relationship between Stark
+    is just chef's kiss.
+    </>,
   },
   {
     id: "monogatari",
@@ -67,7 +84,7 @@ export const animeList = [
     id: "madeInAbyss1",
     title: "Made in Abyss",
     image: madeInAbyss1,
-    image1: madeInAbyss1,
+    image1: madeInAbyss,
     description:
       "A young girl descends into the mysterious Abyss in search of her mother, uncovering both beauty and horror.",
     reason: <></>,
@@ -100,3 +117,114 @@ export const animeList = [
     reason: <></>,
   },
 ];
+
+export const others = [
+  {
+    id: "romcom",
+    title: "Romcom 3x3",
+    image: oregairuOthers,
+    image1: oregairuOthers,
+    description:
+      "A collection of the best romantic comedy anime series, each with its own unique take on love and humor.",
+    reason: <></>,
+  },
+  {
+    id: "sliceOfLife",
+    title: "Slice of Life 3x3",
+    image: dunno,
+    image1: dunno,
+    description:
+      "A collection of the best slice-of-life anime series, each with its own unique take on everyday life.",
+    reason: <></>,
+  },
+  {
+    id: "music",
+    title: "Music 3x3",
+    image: rere,
+    image1: dunno,
+    description:
+      "A collection of the best music-themed anime series, each with its own unique take on the power of music.",
+    reason: <></>,
+  },
+];
+
+
+export const romcomList = [
+  {
+    id: "oregairu",
+    title: "My Teen Romantic Comedy SNAFU",
+    image: oregairu,
+    image1: oregairu,
+    description: "A high school student navigates the complexities of friendship and romance while forming a service club.",
+    reason: <></>,
+  },
+  {
+    id: "chuunibyou",
+    title: "Chuunibyou Demo Koi ga Shitai!",
+    image: chuunibyou,
+    image1: chuunibyou,
+    description: "A high school student with a vivid imagination struggles to cope with reality while navigating love and friendship.",
+    reason: <></>,
+  },
+  {
+    id: "bokuyaba",
+    title: "boku no kokoro no yabai yatsu",
+    image: bokuyaba,
+    image1: bokuyaba,
+    description: "A high school student with a dark secret navigates the challenges of adolescence and romance.",
+    reason: <></>,
+  },
+  {
+    id: "saekano",
+    title: "Saekano: How to Raise a Boring Girlfriend",
+    image: saekano,
+    image1: saekano,
+    description: "A high school student forms a doujin circle to create a visual novel, leading to unexpected romantic entanglements.",
+    reason: <></>,
+  },
+  {
+    id: "tamako",
+    title: "tamako love story",
+    image: tamako,
+    image1: tamako,
+    description: "A heartwarming story about a girl and her childhood friend navigating love and friendship.",
+    reason: <></>,
+  },
+  {
+    id: "clannad",
+    title: "clannad: after story",
+    image: clannad,
+    image1: clannad,
+    description: "A touching continuation of Clannad, exploring themes of family, love, and personal growth.",
+    reason: <></>,
+  },
+  {
+    id: "kaguyasama",
+    title: "Kaguya-sama: Love Is War",
+    image: kaguyasama,
+    image1: kaguyasama,
+    description: "Two high school geniuses engage in a battle of wits to make the other confess their love first.",
+    reason: <></>,
+  },
+  {
+    id: "goldenTime",
+    title: "Golden Time",
+    image: goldenTime,
+    image1: goldenTime,
+    description: "A college student with amnesia navigates new relationships and personal growth in Tokyo.",
+    reason: <></>,
+  },
+  {
+    id: "makeine",
+    title: "Makeine: Too Many Losing Heroines",
+    image: makeine,
+    image1: makeine,
+    description: "A high school student finds himself surrounded by multiple losing heroines, each with their own unique struggles and stories.",
+    reason: <>
+    this is all you need to be convinced:
+    <a href="https://makeine-anime.com/special/calorie_meter/" target="_blank" rel="noopener noreferrer" className="hover:text-stone-400 italic text-blue-300"> calorie meter</a>.  
+    It shows the amount of calorie Yanami ate during the span of the 12 episodes</>,
+  },
+];
+
+

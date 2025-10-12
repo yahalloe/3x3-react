@@ -6,7 +6,7 @@ import { AboutmeFooter } from "../components/AboutmeFooter";
 export function About() {
   return (
     <div>
-      <Header />
+      <Header title="About me"/>
       <div className="black-333">
         <AboutmeBody />
         <AboutmeFooter />

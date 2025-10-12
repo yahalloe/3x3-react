@@ -2,15 +2,14 @@ import "../styles/globals.css";
 import { Body } from "../components/Body";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
-import { Others } from "../components/Others";
+import { RomcomBody } from "../components/RomcomBody";
 
-export function Home() {
+export function Romcom() {
   return (
       <div>
-        <Header title="YAHALLO'S 3X3"/>
+        <Header title="Romcom 3x3" />
         <div className="black-333">
-          <Body />
-          <Others />
+          <RomcomBody />
           <Footer />
         </div>
       </div>
