@@ -1,22 +1,27 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home";
-import { AnimePage } from './components/AnimePage';
-import { About } from './pages/About';
-import { NotFound } from './pages/NotFound';
+import { AnimePage } from "./components/AnimePage";
+import { About } from "./pages/About";
+import { NotFound } from "./pages/NotFound";
+import { Romcom } from "./pages/Romcom";
+import { ScrollToTop } from "./components/ScrollToTop";
 
 function App() {
   return (
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
+    <BrowserRouter>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Home />} />
 
-          <Route path="/anime/:title" element={<AnimePage />} />
+        <Route path="/anime/:id" element={<AnimePage />} />
 
-          <Route path="/about" element={<About />} />
+        <Route path="/romcom" element={<Romcom />} />
 
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
+        <Route path="/about" element={<About />} />
+
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
