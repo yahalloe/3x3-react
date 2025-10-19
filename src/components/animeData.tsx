@@ -23,6 +23,7 @@ import clannad from "../assets/clannad-after-story-21.jpg";
 import kaguyasama from "../assets/kaguya-sama-love-is-war-shinomiya-cat-ears.jpg";
 import goldenTime from "../assets/golden time.jpg";
 import makeine from "../assets/makeine.webp";
+import kayo from "../assets/kayo.jpg";
 
 
 export const animeList = [
@@ -120,7 +121,7 @@ export const animeList = [
 export const others = [
   {
     id: "romcom",
-    title: "Romcom 3x3",
+    title: "Romcom",
     image: oregairuOthers,
     image1: oregairuOthers,
     description:
@@ -128,17 +129,17 @@ export const others = [
     reason: <></>,
   },
   {
-    id: "sliceOfLife",
-    title: "Slice of Life 3x3",
-    image: dunno,
-    image1: dunno,
+    id: "drama",
+    title: "Drama",
+    image: kayo,
+    image1: kayo,
     description:
-      "A collection of the best slice-of-life anime series, each with its own unique take on everyday life.",
+      "A collection of the best drama anime series, each with its own unique take on emotional storytelling.",
     reason: <></>,
   },
   {
     id: "music",
-    title: "Music 3x3",
+    title: "Music",
     image: rere,
     image1: dunno,
     description:
@@ -222,8 +223,18 @@ export const romcomList = [
     reason: <>
     this is all you need to be convinced:
     <a href="https://makeine-anime.com/special/calorie_meter/" target="_blank" rel="noopener noreferrer" className="hover:text-stone-400 italic text-blue-300"> calorie meter</a>.  
-    It shows the amount of calorie Yanami ate during the span of the 12 episodes</>,
+    It shows the amount of calorie Yanami ate during the span of the 12 episodes
+    </>,
   },
 ];
 
-
+export const dramaList =[
+  {
+    id: "erased",
+    title: "Erased",
+    image: kayo,
+    image1: kayo,
+    description: "",
+    reason: <></>,
+  }
+]

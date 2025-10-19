@@ -4,6 +4,7 @@ import { AnimePage } from "./components/AnimePage";
 import { About } from "./pages/About";
 import { NotFound } from "./pages/NotFound";
 import { Romcom } from "./pages/Romcom";
+import { Drama } from "./pages/Drama";
 import { ScrollToTop } from "./components/ScrollToTop";
 
 function App() {
@@ -16,6 +17,8 @@ function App() {
         <Route path="/anime/:id" element={<AnimePage />} />
 
         <Route path="/romcom" element={<Romcom />} />
+
+        <Route path="/drama" element={<Drama />} />
 
         <Route path="/about" element={<About />} />
 
