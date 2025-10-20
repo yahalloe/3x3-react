@@ -11,11 +11,11 @@ export function Header({ title }: HeaderProps) {
         23 11.2
       </div>
 
-      <Link to="/" className="no-underline">
-        <div className="text-5xl hover:text-stone-600 sm:text-7xl md:text-9xl lg:max-w-full max-w-90 sm:max-w-90 mx-auto flex justify-center pb-6 sm:pb-10 text-stone-300 font-nunito text-center">
+      <div className="text-5xl  hover:text-stone-600 sm:text-7xl md:text-9xl lg:max-w-6xl max-w-90 sm:max-w-90 mx-auto flex justify-center pb-6 sm:pb-10 text-stone-300 font-nunito text-center">
+        <Link to="/" className="no-underline">
           {title}
-        </div>
-      </Link>
+        </Link>
+      </div>
     </div>
   );
 }
