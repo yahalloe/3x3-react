@@ -25,6 +25,7 @@ import goldenTime from "../assets/golden time.jpg";
 import makeine from "../assets/makeine.webp";
 import kayo from "../assets/kayo.jpg";
 import maomao from "../assets/maomao.jpg";
+import sakuraSou from "../assets/sakura-sou.webp";
 
 
 export const animeList = [
@@ -243,6 +244,14 @@ export const dramaList =[
     title: "Apothecary diaries",
     image: maomao,
     image1: maomao,
+    description: "",
+    reason: <></>,
+  },
+  {
+    id: "sakuraSou",
+    title: "Sakura Sou no Pet na Kanojo",
+    image: sakuraSou,
+    image1: sakuraSou,
     description: "",
     reason: <></>,
   },
