@@ -24,6 +24,7 @@ import kaguyasama from "../assets/kaguya-sama-love-is-war-shinomiya-cat-ears.jpg
 import goldenTime from "../assets/golden time.jpg";
 import makeine from "../assets/makeine.webp";
 import kayo from "../assets/kayo.jpg";
+import maomao from "../assets/maomao.jpg";
 
 
 export const animeList = [
@@ -236,5 +237,13 @@ export const dramaList =[
     image1: kayo,
     description: "",
     reason: <></>,
-  }
+  },
+  {
+    id: "maomao",
+    title: "Apothecary diaries",
+    image: maomao,
+    image1: maomao,
+    description: "",
+    reason: <></>,
+  },
 ]
