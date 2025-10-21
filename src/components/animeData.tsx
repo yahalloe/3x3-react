@@ -255,4 +255,30 @@ export const dramaList =[
     description: "",
     reason: <></>,
   },
-]
+];
+
+export const musicList = [
+  {
+    id: "rere",
+    title: "Re:Creators",
+    image: rere,
+    image1: rere,
+    description: "",
+    reason: <></>,
+  },
+  {
+    id: "dunno",
+    title: "Dunno",
+    image: dunno,
+    image1: dunno,
+    description: "",
+    reason: <></>,
+  },
+];
+
+export const listsById = {
+  romcom: romcomList,
+  drama: dramaList,
+  music: musicList,
+  // add more when needed
+};

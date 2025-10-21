@@ -1,5 +1,14 @@
 import { Link } from "react-router-dom";
-import { others } from "./animeData";
+import { others, listsById } from "./animeData";
+import { prefetchImages } from "../components/utils/prefetchImages";
+
+const handlePrefetch = (id: string) => {
+  const list = listsById[id as keyof typeof listsById];
+  if (list) {
+    const urls = list.map((item) => item.image);
+    prefetchImages(urls);
+  }
+};
 
 export function Others() {
   return (
@@ -9,7 +18,11 @@ export function Others() {
           Other 3x3s
         </h1>
         {others.map((anime) => (
-          <div key={anime.id} className="flex flex-col items-center">
+          <div
+            key={anime.id}
+            className="flex flex-col items-center"
+            onMouseEnter={() => handlePrefetch(anime.id)} // 👈 prefetch only that section
+          >
             <Link to={`/${anime.id}`}>
               <img
                 src={anime.image}
@@ -17,11 +30,12 @@ export function Others() {
                 className="object-cover w-full aspect-square rounded-2xl border-2 border-transparent hover:border-stone-100 transition-all duration-200"
               />
             </Link>
-            <h3 className="text-stone-300 mt-2 text-lg font-semibold">{anime.title}</h3>
+            <h3 className="text-stone-300 mt-2 text-lg font-semibold">
+              {anime.title}
+            </h3>
           </div>
         ))}
       </div>
     </div>
   );
 }
-
