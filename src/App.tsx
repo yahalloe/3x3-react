@@ -5,7 +5,7 @@ import { About } from "./pages/About";
 import { NotFound } from "./pages/NotFound";
 import { Romcom } from "./pages/Romcom";
 import { Drama } from "./pages/Drama";
-import { ScrollToTop } from "./components/ScrollToTop";
+import { ScrollToTop } from "./components/utils/ScrollToTop";
 
 function App() {
   return (
