@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
-import { others, listsById } from "./animeData";
+import { useState } from "react";
+import { others, listsById, type ListId } from "./animeData";
 import { prefetchImages } from "../components/utils/prefetchImages";
 
-const handlePrefetch = (id: string) => {
-  const list = listsById[id as keyof typeof listsById];
+const handlePrefetch = (id: ListId) => {
+  const list = listsById[id];
   if (list) {
     const urls = list.map((item) => item.image);
     prefetchImages(urls);
@@ -11,6 +12,16 @@ const handlePrefetch = (id: string) => {
 };
 
 export function Others() {
+  const [hasStartedPrefetch, setHasStartedPrefetch] = useState(false);
+
+  const handleFirstInteraction = () => {
+    if (!hasStartedPrefetch) {
+      // Prefetch everything once user shows ANY interest
+      others.forEach((anime) => handlePrefetch(anime.id));
+      setHasStartedPrefetch(true);
+    }
+  };
+
   return (
     <div className="w-full black-1a1">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:grid-cols-3 md:gap-5 lg:gap-3 max-w-[1000px] mx-auto px-2 pt-10 pb-10">
@@ -21,7 +32,8 @@ export function Others() {
           <div
             key={anime.id}
             className="flex flex-col items-center"
-            onMouseEnter={() => handlePrefetch(anime.id)} // 👈 prefetch only that section
+            onMouseEnter={handleFirstInteraction}
+            onTouchStart={handleFirstInteraction} 
           >
             <Link to={`/${anime.id}`}>
               <img

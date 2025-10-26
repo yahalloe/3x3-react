@@ -1,5 +1,7 @@
 // animeData.tsx
 
+import { type ReactNode } from "react"; 
+
 import hyouka from "../assets/hyouka.jpg";
 import edgerunner from "../assets/edgerunner.gif";
 import fern from "../assets/fern.png";
@@ -27,8 +29,16 @@ import kayo from "../assets/kayo.jpg";
 import maomao from "../assets/maomao.jpg";
 import sakuraSou from "../assets/sakura-sou.webp";
 
+interface AnimeItem {
+  id: string;
+  title: string;
+  image: string;
+  image1: string;
+  description: string;
+  reason: ReactNode;
+}
 
-export const animeList = [
+export const animeList: AnimeItem[] = [
   {
     id: "hyouka",
     title: "Hyouka",
@@ -120,7 +130,16 @@ export const animeList = [
   },
 ];
 
-export const others = [
+interface OtherAnime {
+  id: ListId;
+  title: string;
+  image: string;
+  image1: string;
+  description: string;
+  reason: ReactNode;
+}
+
+export const others: OtherAnime[] = [
   {
     id: "romcom",
     title: "Romcom",
@@ -151,7 +170,7 @@ export const others = [
 ];
 
 
-export const romcomList = [
+export const romcomList: AnimeItem[] = [
   {
     id: "oregairu",
     title: "My Teen Romantic Comedy SNAFU",
@@ -230,7 +249,7 @@ export const romcomList = [
   },
 ];
 
-export const dramaList =[
+export const dramaList: AnimeItem[] = [
   {
     id: "erased",
     title: "Erased",
@@ -280,5 +299,6 @@ export const listsById = {
   romcom: romcomList,
   drama: dramaList,
   music: musicList,
-  // add more when needed
-};
+} as const;
+
+export type ListId = keyof typeof listsById;
