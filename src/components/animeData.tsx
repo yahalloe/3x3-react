@@ -21,13 +21,13 @@ import chuunibyou from "../assets/chuunibyou.jpeg";
 import bokuyaba from "../assets/boku-no-kokoro-no-yabai-6.jpg";
 import saekano from "../assets/saekano7.jpg";
 import tamako from "../assets/tamako.jpg";
-import clannad from "../assets/clannad-after-story-21.jpg";
 import kaguyasama from "../assets/kaguya-sama-love-is-war-shinomiya-cat-ears.jpg";
 import goldenTime from "../assets/golden time.jpg";
 import makeine from "../assets/makeine.webp";
 import kayo from "../assets/kayo.jpg";
 import maomao from "../assets/maomao.jpg";
 import sakuraSou from "../assets/sakura-sou.webp";
+import nisekoi from "../assets/nisekoi.webp";
 
 interface AnimeItem {
   id: string;
@@ -212,11 +212,11 @@ export const romcomList: AnimeItem[] = [
     reason: <></>,
   },
   {
-    id: "clannad",
-    title: "clannad: after story",
-    image: clannad,
-    image1: clannad,
-    description: "A touching continuation of Clannad, exploring themes of family, love, and personal growth.",
+    id: "nisekoi",
+    title: "Nisekoi",
+    image: nisekoi,
+    image1: nisekoi,
+    description: "A romantic comedy about a high school student who becomes entangled in a love triangle with two girls.",
     reason: <></>,
   },
   {
