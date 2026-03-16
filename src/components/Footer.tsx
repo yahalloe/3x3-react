@@ -11,7 +11,7 @@ export function Footer() {
         <a href="https://animepicker.yahallo.tech" target="_blank" className="hover:text-stone-300">anime picker</a>
       </div>
       <div className="text-sm lg:text-xl font-nunito flex justify-center pb-3 pt-3 text-zinc-700">
-        © 2023-2025 YAHALLOE'S 3X3
+        © 2023-2026 YAHALLOE'S 3X3
       </div>
     </div>
   );
